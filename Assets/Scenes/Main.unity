@@ -1364,7 +1364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 787365655}
   m_Layer: 0
-  m_Name: Objects
+  m_Name: GroundFolliage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1378,7 +1378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 787365654}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1414,7 +1414,6 @@ Transform:
   - {fileID: 956613135}
   - {fileID: 1237704780}
   - {fileID: 680057063}
-  - {fileID: 1093022456}
   - {fileID: 2031114553}
   - {fileID: 1943802574}
   - {fileID: 1291030709}
@@ -1428,7 +1427,7 @@ Transform:
   - {fileID: 1360687329}
   - {fileID: 449013766}
   - {fileID: 2042336223}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 6792816074566799167}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &956613134
 PrefabInstance:
@@ -1760,11 +1759,11 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 787365655}
+    m_TransformParent: {fileID: 6792816074566799167}
     m_Modifications:
     - target: {fileID: 7646758127176492012, guid: f94ff99c261e9924bbbb894292ced45c, type: 3}
       propertyPath: m_Name
-      value: Spruce_008
+      value: Main_Tree
       objectReference: {fileID: 0}
     - target: {fileID: 7013633679832381782, guid: f94ff99c261e9924bbbb894292ced45c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1805,6 +1804,10 @@ PrefabInstance:
     - target: {fileID: 7013633679832381782, guid: f94ff99c261e9924bbbb894292ced45c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7646758127176492012, guid: f94ff99c261e9924bbbb894292ced45c, type: 3}
+      propertyPath: m_Name
+      value: Main_Tree
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4170,9 +4173,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6471205680981507130, guid: 3e8e7cbe9bb1aef4f9e8cac06556824e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 787365655}
+    - targetCorrespondingSourceObject: {fileID: 6471205680981507130, guid: 3e8e7cbe9bb1aef4f9e8cac06556824e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1093022456}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e8e7cbe9bb1aef4f9e8cac06556824e, type: 3}
+--- !u!4 &6792816074566799167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6471205680981507130, guid: 3e8e7cbe9bb1aef4f9e8cac06556824e, type: 3}
+  m_PrefabInstance: {fileID: 6792816074566799166}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4180,5 +4194,4 @@ SceneRoots:
   - {fileID: 1256694717}
   - {fileID: 119082060}
   - {fileID: 6792816074566799166}
-  - {fileID: 787365655}
   - {fileID: 1855178481}
