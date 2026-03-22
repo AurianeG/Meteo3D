@@ -27,7 +27,7 @@ public class SimpleWeather : MonoBehaviour
     IEnumerator GetWeather()
     {
         string url =
-            "https://api.open-meteo.com/v1/forecast?latitude=45.50&longitude=-73.56&current_weather=true";
+            "https://api.open-meteo.com/v1/forecast?latitude=48.4196&longitude=-71.0637&current_weather=true";
         UnityWebRequest request = UnityWebRequest.Get(url);
         yield return request.SendWebRequest();
         if (request.result == UnityWebRequest.Result.Success)
