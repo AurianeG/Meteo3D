@@ -1,2 +1,25 @@
 fileFormatVersion: 2
 guid: 731a0fbcc5c0edf458a812fb6acc4646
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - temperatureText: {instanceID: 0}
+  - sun: {instanceID: 0}
+  - sunAudio: {instanceID: 0}
+  - rain: {instanceID: 0}
+  - rainAudio: {instanceID: 0}
+  - tree: {fileID: 919132149155446097, guid: 2f0d06460af8385498085d4e0b7f35d2, type: 3}
+  - snowTree: {instanceID: 0}
+  - snowAudio: {instanceID: 0}
+  - fog: {instanceID: 0}
+  - fogAudio: {instanceID: 0}
+  - cloud: {instanceID: 0}
+  - cloudAudio: {instanceID: 0}
+  - thunder: {instanceID: 0}
+  - thunderAudio: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

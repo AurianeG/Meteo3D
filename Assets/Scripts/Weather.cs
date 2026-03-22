@@ -5,23 +5,18 @@ using UnityEngine.Networking;
 public class SimpleWeather : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI temperatureText;
-    public GameObject sun;
-    public GameObject sunAudio;
+    //public GameObject sun;
 
     public GameObject rain;
-    public GameObject rainAudio;
 
-    public GameObject snow;
-    public GameObject snowAudio;
+    public GameObject tree;
+    public GameObject snowTree;
 
     public GameObject fog;
-    public GameObject fogAudio;
 
     public GameObject cloud;
-    public GameObject cloudAudio;
 
     public GameObject thunder;
-    public GameObject thunderAudio;
     
 
     void Start()
@@ -41,13 +36,29 @@ public class SimpleWeather : MonoBehaviour
             float temp = data.current_weather.temperature;
             int code = data.current_weather.weathercode;
             temperatureText.text = temp + "°C";
-            // Activation simple selon le code
-            sun.SetActive(code <= 2);
-            rain.SetActive((code >= 51 && code <= 67) || (code >= 80 && code <= 82));
-            snow.SetActive((code >= 71 && code <= 77) || (code >= 85 && code <= 86));
-            fog.SetActive(code >= 45 && code <= 48);
-            cloud.SetActive(code == 3 || (code >= 20 && code <= 40));
-            thunder.SetActive(code >= 95 && code <= 99);
+
+
+            //sun.SetActive(code <= 2);
+            if((code >= 51 && code <= 67) || (code >= 80 && code <= 82))
+            {
+                rain.SetActive(true);
+            }
+            else if((code >= 71 && code <= 77) || (code >= 85 && code <= 86))
+            {
+                tree.SetActive(false);
+                snowTree.SetActive(true);
+            }
+            else if(code >= 45 && code <= 48)            {
+                fog.SetActive(true);
+            }
+            else if(code == 3 || (code >= 20 && code <= 40))
+            {
+            cloud.SetActive(true);
+            }
+            else if(code >= 95 && code <= 99)
+            {
+                thunder.SetActive(true);
+            }
         }
         else
         {
