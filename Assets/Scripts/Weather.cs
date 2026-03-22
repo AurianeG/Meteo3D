@@ -5,7 +5,7 @@ using UnityEngine.Networking;
 public class SimpleWeather : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI temperatureText;
-    //public GameObject sun;
+    public GameObject sun;
 
     public GameObject rain;
 
@@ -37,9 +37,11 @@ public class SimpleWeather : MonoBehaviour
             int code = data.current_weather.weathercode;
             temperatureText.text = temp + "°C";
 
-
-            //sun.SetActive(code <= 2);
-            if((code >= 51 && code <= 67) || (code >= 80 && code <= 82))
+            if(code <= 2)
+            {
+                sun.SetActive(true);
+            }
+            else if((code >= 51 && code <= 67) || (code >= 80 && code <= 82))
             {
                 rain.SetActive(true);
             }
